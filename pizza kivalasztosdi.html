@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pidza</title>
+</head>
+
+<body>
+    <h1>Válasszad kifele milyen pizzára fáj a fogad öcsi!</h1>
+
+    <div>
+        <h2>Alap pizza</h2>
+        <p>Ár: 1300 Ft</p>
+        <form>
+            <label>
+                <input type="checkbox" name="paradicsomszosz" value="0" checked> Paradicsomszósz (Ingyé)
+            </label> <label>
+                <input type="checkbox" name="tenyfolos fokis szosz" value="0"> Tenyfölös-fokis szósz (Ingyé)
+            </label>
+            <label>
+                <input type="checkbox" name="sajt" value="300"> Sajt (+300 Ft)
+            </label>
+            <label>
+                <input type="checkbox" name="szanami" value="500"> Szanámi (+500 Ft)
+            </label>
+            <label>
+                <input type="checkbox" name="gombesz" value="400"> Gombesz (+400 Ft)
+            </label>
+            <label>
+                <input type="checkbox" name="sonka" value="600"> Sunka (+600 Ft)
+            </label> <label>
+                <input type="checkbox" name="paradicksom" value="200"> Paradicksom (+200 Ft)
+            </label> <label>
+                <input type="checkbox" name="csirkehus" value="600"> Csirkehús (+600 Ft)
+            </label> <label>
+                <input type="checkbox" name="baconszanonna" value="500"> Baconszanonna (+500 Ft)
+            </label> <label>
+                <input type="checkbox" name="csulok" value="500"> Csülök (+500 Ft)
+            </label>
+            <button type="button" onclick="szamolj()">Mutasd az árat fijam!</button>
+        </form>
+        <p id="vegosszeg"></p>
+    </div>
+
+   <script src="arak.js"></script>
+</body>
+
+</html>
