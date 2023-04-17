@@ -41,7 +41,7 @@ body {
     box-shadow: inset 100px 0 0 0 red;
     color: white;
   }
-nav a:hover {
+ul a:hover {
     background-color: rgb(252, 50, 50);
     color: white !important;
     transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
@@ -62,4 +62,14 @@ h3 {
 }
 .price {
     float: right;
+}
+nav {
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+.social{
+    height: 30px;
+   
+   
 }
