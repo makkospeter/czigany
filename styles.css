@@ -8,16 +8,23 @@
     top: 0;
     margin-left: -40px;
     text-align: center;
+
     
 }
 .logo:hover{
     background-color: white;
 }
 
-.csik {
+.header-image {
     padding: 0px;
     margin: 0px;
     width: 100%;
+    height: 306px;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    z-index: 1;
+    background-image: url(kepek/head.jpg);
 }
 hr {
     background-color: red;
