@@ -80,3 +80,17 @@ nav {
    
    
 }
+body {
+    background-color: #f0f0f0;
+}
+button{
+    border: none;
+}
+
+.left {
+    position: absolute;
+    left: 100%;
+}
+html {
+    scroll-behavior: smooth;
+}
