@@ -1,98 +1,38 @@
+var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+var currId = 0;
+var containers = Array.from(document.getElementsByClassName("beniDad"));
+containers.forEach((currVal, index, arr) => {
+    currVal.style.left = "200%";
+});
+containers[0].style.left = '10%';
 function valt(id){
+console.log(containers);
+console.log(width);
 
-
-switch (id) {
-    case '1': 
-        document.getElementById('1').style.left = '10%';
-        document.getElementById('2').style.left = '100%';
-        document.getElementById('3').style.left = '100%';
-        document.getElementById('4').style.left = '100%';
-        document.getElementById('5').style.left = '100%';
-        document.getElementById('6').style.left = '100%';
-        document.getElementById('7').style.left = '100%';
-        document.getElementById('8').style.left = '100%';
-        break;
-    
-    case '2': 
-        document.getElementById('1').style.left = '100%';
-        document.getElementById('2').style.left = '10%';
-        document.getElementById('3').style.left = '100%';
-        document.getElementById('4').style.left = '100%';
-        document.getElementById('5').style.left = '100%';
-        document.getElementById('6').style.left = '100%';
-        document.getElementById('7').style.left = '100%';
-        document.getElementById('8').style.left = '100%';
-        break;
-  
-    case '3': 
-        document.getElementById('1').style.left = '0%';
-        document.getElementById('2').style.left = '0%';
-        document.getElementById('3').style.left = '100%';
-        document.getElementById('4').style.left = '0%';
-        document.getElementById('5').style.left = '0%';
-        document.getElementById('6').style.left = '0%';
-        document.getElementById('7').style.left = '0%';
-        document.getElementById('8').style.left = '0%';
-        break;
-    
-    case '4': 
-        document.getElementById('1').style.left = '0%';
-        document.getElementById('2').style.left = '0%';
-        document.getElementById('3').style.left = '0%';
-        document.getElementById('4').style.left = '100%';
-        document.getElementById('5').style.left = '0%';
-        document.getElementById('6').style.left = '0%';
-        document.getElementById('7').style.left = '0%';
-        document.getElementById('8').style.left = '0%';
-        break;
-
-    case '5': 
-        document.getElementById('1').style.left = '0%';
-        document.getElementById('2').style.left = '0%';
-        document.getElementById('3').style.left = '0%';
-        document.getElementById('4').style.left = '0%';
-        document.getElementById('5').style.left = '100%';
-        document.getElementById('6').style.left = '0%';
-        document.getElementById('7').style.left = '0%';
-        document.getElementById('8').style.left = '0%';
-        break;
-
-    case '6': 
-        document.getElementById('1').style.left = '0%';
-        document.getElementById('2').style.left = '0%';
-        document.getElementById('3').style.left = '0%';
-        document.getElementById('4').style.left = '0%';
-        document.getElementById('5').style.left = '0%';
-        document.getElementById('6').style.left = '100%';
-        document.getElementById('7').style.left = '0%';
-        document.getElementById('8').style.left = '0%';
-        break;
-
-    case '7': 
-        document.getElementById('1').style.left = '0%';
-        document.getElementById('2').style.left = '0%';
-        document.getElementById('3').style.left = '0%';
-        document.getElementById('4').style.left = '0%';
-        document.getElementById('5').style.left = '0%';
-        document.getElementById('6').style.left = '0%';
-        document.getElementById('7').style.left = '100%';
-        document.getElementById('8').style.left = '0%';
-         break;
-
-    case '8': 
-        document.getElementById('1').style.left = '0%';
-        document.getElementById('2').style.left = '0%';
-        document.getElementById('3').style.left = '0%';
-        document.getElementById('4').style.left = '0%';
-        document.getElementById('5').style.left = '0%';
-        document.getElementById('6').style.left = '0%';
-        document.getElementById('7').style.left = '0%';
-        document.getElementById('8').style.left = '100%';
-        break;
+containers.forEach((currVal, index, arr) => {
+    currVal.style.left = "200%";
+});
+currId = id;
+if(width > 700) {
+    containers[id].style.left = "15%";
+}
+else if(width <= 700) {
+    containers[id].style.left = "-0%";
 }
 }
 
-$(document).ready(function(){
+window.addEventListener("resize", (event) => {
+    width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+    console.log(currId);
+    if(width > 700) {
+        containers[currId].style.left = "15%";
+    }
+    else if(width <= 700) {
+        containers[currId].style.left = "-0%";
+    }
+});
+
+document.addEventListener("ready", function(){
 	$('#nav-icon1,#nav-icon2,#nav-icon3,#nav-icon4').click(function(){
 		$(this).toggleClass('open');
 	});

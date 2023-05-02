@@ -99,3 +99,10 @@ html {
     scroll-behavior: smooth;
 }
 
+#itallap {
+    margin-top: 500px;
+}
+.position-relative {
+    position: relative;
+    height: 600px;
+}
