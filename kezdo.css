@@ -5,5 +5,11 @@ header{
 }
 h2{
     color: white;
-    font-size: 20px;
+    font-size: 25px;
+}
+.content{
+    color: white;
+}
+.szoveg{
+    color: black;
 }
