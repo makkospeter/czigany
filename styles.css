@@ -99,10 +99,16 @@ html {
     scroll-behavior: smooth;
 }
 
-#itallap {
-    margin-top: 500px;
-}
+
 .position-relative {
     position: relative;
-    height: 600px;
+    height: 400px;
+}
+a:hover {
+    color: black;
+  
+}
+.footer {
+    color: red;
+    
 }
