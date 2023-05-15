@@ -5,6 +5,7 @@ containers.forEach((currVal, index, arr) => {
     currVal.style.left = "200%";
 });
 containers[0].style.left = '0%';
+containers[3].style.left = '0%';
 function valt(id) {
     console.log(containers);
     console.log(width);
@@ -12,6 +13,9 @@ function valt(id) {
     containers.forEach((currVal, index, arr) => {
         currVal.style.left = "200%";
     });
+    if(id <= 2) {
+        containers[3].style.left = '0%';
+    } else{ containers[0].style.left = '0%'; }
     currId = id;
     if (width > 700) {
         containers[id].style.left = "0%";
