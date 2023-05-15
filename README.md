@@ -2,6 +2,6 @@
 A munkákat a következő képpen osztottuk fel:
 
 -  Makkos Péter: Főoldal, CSS, Javascript fájlok kezelése
-- Kiss Marcell: Itallap mellékoldal létrehozása
+- Kiss Marcell: Itallap mellékoldal létrehozása, Readme
 - Ikker Benjámin: Galéria, Readme létrehozása
 
