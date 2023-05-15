@@ -116,3 +116,9 @@ a:hover {
 nav {
     background-color: white;
 }
+@media only screen and (max-width: 770px) {
+    .lent {
+      margin-top: 200px;
+    }
+  }
+  
