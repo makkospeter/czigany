@@ -12,7 +12,7 @@
     top: 0;
     margin-left: -40px;
     text-align: center;
-    overflow: visible
+    /* overflow: visible */
     
 }
 .logo:hover{
@@ -136,3 +136,8 @@ nav {
     /* .lent {
       margin-top: 0px;
     } */
+
+.container{
+    overflow-x: hidden;
+    position: absolute;
+}
