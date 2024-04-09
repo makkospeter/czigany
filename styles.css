@@ -1,3 +1,7 @@
+#itallap{
+    margin-top: 250px
+}
+
 .logo {
   
     
@@ -25,7 +29,7 @@
     overflow: hidden;
     z-index: 1;
     background-image: url(kepek/head.jpg);
-    margin-top: 61px;
+    margin-top: 51px;
 }
 hr {
     background-color: red;
@@ -117,6 +121,6 @@ nav {
     background-color: white;
 }
 
-    .lent {
-      margin-top: -100px;
-    }
+    /* .lent {
+      margin-top: 0px;
+    } */
