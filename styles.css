@@ -86,9 +86,18 @@ nav {
    
    
 }
+
+
+
 body {
     background-color: #f0f0f0;
     overflow-x: hidden;
+    margin: 0;
+    width: 100vw; 
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
 }
 button{
     border: none;
@@ -102,6 +111,9 @@ button{
 }
 html {
     scroll-behavior: smooth;
+    position: fixed;
+    height: 100%;
+    overflow: hidden;
 }
 
 
